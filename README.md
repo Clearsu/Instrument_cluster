@@ -2,7 +2,11 @@
 This project involves the implementation of an instrument cluster as the second DES (Distributed Embedded Systems) project in the SEA:ME curriculum.
 
 ## Overview
-An instrument cluster, also known as a dashboard cluster or gauge cluster, is a critical component of a vehicle’s dashboard. It provides the driver with essential information about the vehicle’s status and performance through various gauges, indicators, and warning lights. Here, we implement an instrument cluster showing real-time speed data on a screen with GUI.
+An instrument cluster application displaying real-time speed data and battery level.
+
+### Features
+- Digital speedometer & numeric speed level
+- Battery level indicator
 
 ## Theoratical Background
 - [CAN bus protocol](https://github.com/SEA-ME-DES-01-Instrument-Cluster/Instrument_cluster/wiki/About-CAN-bus-protocol)
@@ -16,6 +20,17 @@ You can also find those topics on our Wiki.
 <img src="./diagram.svg">
 
 ## Components and Environment
+### Software
+- Main application: C++(Qt6)
+- GUI: QML
+- Firmware(for Arduino): C
+- Speed data transmission: Controller Area Network (CAN)
+- Battery data accessing: I2C protocol
+- Host OS(for development): Ubuntu 20.04
+- Raspberry Pi(target machine): Rasbian Desktop 64bit
+- IDE: Qt Creator, Arduino IDE
+- Version control: Git
+
 ### Hardware
 - [WaveShare JetRacer AI Kit)](https://www.waveshare.com/wiki/JetRacer_AI_Kit)
 - [MH Infrared Speed Sensor Module (FC-03)](https://einstronic.com/product/infrared-speed-sensor-module/)
@@ -24,14 +39,6 @@ You can also find those topics on our Wiki.
 - [SeeedStudio 2-CH CAN FD HAT](https://wiki.seeedstudio.com/2-Channel-CAN-BUS-FD-Shield-for-Raspberry-Pi/)
 - [Raspberry Pi 4B](https://www.raspberrypi.com/products/raspberry-pi-4-model-b/)
 - [WaveShare 7.9inch DSI LCD](https://www.waveshare.com/wiki/7.9inch_DSI_LCD)
-
-### Software
-- Main application: C++(Qt framework)
-- Firmware(for Arduino): C
-- Host OS(for development): Ubuntu 20.04
-- Raspberry Pi: Rasbian Desktop 64bit
-- IDE: Qt Creator, Arduino IDE
-- Version control: Git
 
 ## Configuration
 ### Display - WaveShare 7.9inch DSI LCD
